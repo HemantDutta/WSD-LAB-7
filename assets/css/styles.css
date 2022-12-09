@@ -60,11 +60,21 @@ body{
 
 #searchDiv, #jsonDiv{
     min-height: 30vh;
-    background-color: #FEFCF3;
+    background-color: white;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
-    transition: all 0.4s ease;
+    transition: all 0.8s ease;
     padding: 20px;
+}
+
+#searchDiv{
+    transform: translateY(-20%);
+    opacity: 0;
+}
+
+#jsonDiv{
+    transform: translateY(20%);
+    opacity: 0;
 }
 
 #searchDiv:hover, #jsonDiv:hover{
