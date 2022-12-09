@@ -52,12 +52,19 @@ body{
     color: white;
 }
 
+.main-data-table th{
+    width: 12.5%;
+    text-align: center;
+    padding: 10px;
+}
+
 #searchDiv, #jsonDiv{
     min-height: 30vh;
-    background-color: #FFFBEB;
+    background-color: #FEFCF3;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
     transition: all 0.4s ease;
+    padding: 20px;
 }
 
 #searchDiv:hover, #jsonDiv:hover{

@@ -14,8 +14,39 @@
         <h1 class="text-uppercase text-light">Angular Model</h1>
     </div>
     <div class="mid-sect row justify-content-between">
-        <div class="col-lg-3 col-md-3 col-sm-12" id="searchDiv"></div>
-        <div class="col-lg-8 col-md-8 col-sm-12" id="jsonDiv"></div>
+        <div class="col-lg-3 col-md-12 col-sm-12" id="searchDiv">
+            <h3 class="text-dark mt-4 text-uppercase font-weight-bold">Search</h3>
+            <div class="input-field mt-4">
+                <label for="field" class="form-check-label">Select Field</label>
+                <select name="field" id="field" class="form-control mt-2">
+                    <option value="noChoice">Choose a field</option>
+                    <option value="noChoice">Choose a field</option>
+                    <option value="noChoice">Choose a field</option>
+                    <option value="noChoice">Choose a field</option>
+                </select>
+            </div>
+            <div class="searchField mt-4 d-flex flex-column justify-content-center align-items-center">
+                <input type="text" name="search" id="search" class="form-control" placeholder="Enter search term...">
+                <button class="mt-4 btn btn-outline-dark mb-4">Search</button>
+            </div>
+        </div>
+        <div class="col-lg-8 col-md-12 col-sm-12" id="jsonDiv">
+            <h3 class="text-dark font-weight-bold text-uppercase mt-4">Data</h3>
+            <div class="mt-4">
+                <table class="main-data-table table-hover table-responsive">
+                    <thead>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Rating</th>
+                        <th>Gigs</th>
+                        <th>Reviews</th>
+                        <th>Price</th>
+                        <th>Joined</th>
+                        <th>Status</th>
+                    </thead>
+                </table>
+            </div>
+        </div>
     </div>
 </div>
 
