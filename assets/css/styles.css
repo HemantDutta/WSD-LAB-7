@@ -12,6 +12,9 @@ body{
 .top-sect{
     text-align: center;
     background: black;
+    padding: 1.5em;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .me{
