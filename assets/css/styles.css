@@ -8,3 +8,28 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.me{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+    transition: all 0.8s ease;
+    opacity: 10%;
+    transform: translateY(100%);
+}
+.me span{
+    font-weight: bold;
+    transition: all 0.4s ease;
+}
+
+.me span a{
+    text-decoration: none;
+    color: gray;
+    transition: all 0.4s ease;
+}
+.me span:hover, .me span a:hover{
+    transform: scale(1.1);
+    color: white;
+}
