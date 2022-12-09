@@ -9,6 +9,11 @@ body{
     background-repeat: no-repeat;
 }
 
+.top-sect{
+    text-align: center;
+    background: black;
+}
+
 .me{
     position: fixed;
     bottom: 0;
