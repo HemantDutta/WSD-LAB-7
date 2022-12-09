@@ -9,12 +9,15 @@ body{
     background-repeat: no-repeat;
 }
 
-.top-sect{
+#navbar{
     text-align: center;
     background: black;
-    padding: 1.5em;
+    padding: 1.3em;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    transition: all 0.8s ease;
+    transform: translateY(-100%);
+    opacity: 0;
 }
 
 .me{
