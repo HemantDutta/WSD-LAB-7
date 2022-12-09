@@ -15,3 +15,5 @@ function onloadAnimations(){
     searchDiv.style.transform = "translateY(0%)"
     searchDiv.style.opacity = "100%";
 }
+
+

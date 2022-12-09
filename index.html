@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-width=1.0">
     <title>Angular Model | WSD LAB 7</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body onload="onloadAnimations()">
+<body onload="onloadAnimations()" ng-app>
 <div class="container main-cont  d-flex flex-column justify-content-center align-items-center">
     <div class="top-sect w-100" id="navbar">
         <h1 class="text-uppercase text-light">Angular Model</h1>
@@ -29,6 +30,12 @@
                     <option value="price">Joined</option>
                     <option value="status">Status</option>
                 </select>
+            </div>
+            <div class="rowsField">
+                <div class="input-field mt-4">
+                    <label for="rows" class="form-check-label">Select no. of rows</label>
+                    <input type="number" name="rows" id="rows" class="form-control" min="0" max="10" value="1">
+                </div>
             </div>
             <div class="searchField mt-4 d-flex flex-column justify-content-center align-items-center">
                 <input type="text" name="search" id="search" class="form-control" placeholder="Enter search term...">
