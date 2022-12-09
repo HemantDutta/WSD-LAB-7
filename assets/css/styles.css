@@ -1,3 +1,10 @@
 body{
-
+    background: #7d558c;
+    background: -webkit-linear-gradient(0deg, #7d558c 0%, #9b1348 100%);
+    background: linear-gradient(0deg, #7d558c 0%, #9b1348 100%);
+    min-height: 100vh;
+    max-height: max-content;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
