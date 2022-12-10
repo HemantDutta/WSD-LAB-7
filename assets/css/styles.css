@@ -52,7 +52,7 @@ body{
     color: white;
 }
 
-.main-data-table th{
+.main-data-table th, tr{
     width: 12.5%;
     text-align: center;
     padding: 10px;
