@@ -63,7 +63,7 @@
                         <th>Status</th>
                     </thead>
                     <tbody>
-                        <tr ng-repeat="x in data | filter: test | limitTo: rows">
+                        <tr ng-repeat="x in data | filter: test | limitTo: rows | orderBy: 'Rating' ">
                             <td>{{x.name | uppercase}}</td>
                             <td>{{x.category}}</td>
                             <td>{{x.Rating | addStar}}</td>
