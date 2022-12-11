@@ -64,14 +64,14 @@
                     </thead>
                     <tbody>
                         <tr ng-repeat="x in data | filter: test | limitTo: rows">
-                            <td>{{x.name}}</td>
+                            <td>{{x.name | uppercase}}</td>
                             <td>{{x.category}}</td>
-                            <td>{{x.Rating}}</td>
+                            <td>{{x.Rating | addStar}}</td>
                             <td>{{x.Gigs}}</td>
                             <td>{{x.Reviews}}</td>
                             <td>{{x.Price | addRup}}</td>
                             <td>{{x.Joined}}</td>
-                            <td>{{x.Status}}</td>
+                            <td class="stat">{{x.Status | checkStat}}</td>
                         </tr>
                     </tbody>
                 </table>
