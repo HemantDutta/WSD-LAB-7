@@ -18,7 +18,8 @@ function onloadAnimations(){
 
 
 
-angular.module('myApp', []).controller('myCtrl', function ($scope){
+let app = angular.module('myApp', []);
+app.controller('myCtrl', function ($scope){
     $scope.data = [
         {name: 'Hemant', category: 'Web Dev', Rating: 4, Gigs: 5, Reviews: 2, Price: 1500, Joined: '10-12-2022', Status: 'active'},
         {name: 'Darpan', category: 'Manager', Rating: 2, Gigs: 1, Reviews: 0, Price: 500, Joined: '10-12-2022', Status: 'active'},
@@ -32,4 +33,23 @@ angular.module('myApp', []).controller('myCtrl', function ($scope){
     ];
     $scope.rows = 1;
 });
+app.filter('reverse', function (){
+    return function (text){
+        text = text || ''; //Since angular has lazy loading, text will only be initialized after some value has been entered, so this statement checks if text has a value otherwise it initializes it with an empty string.
+        let out = '';
+        for(let i = text.length-1; i>=0; i--){
+            out += text[i];
+        }
+        return out;
+    }
+});
+
+app.filter('addRup', function (){
+    return function (text){
+        text = text || '';
+        let out = '';
+        out += "₹"+text;
+        return out;
+    }
+})
 
